@@ -1,16 +1,51 @@
-## Hi there 👋
+## Hi folks👋, It's Ayush Sharma
 
-<!--
-**ius-sharma/ius-sharma** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+🚀 B.Tech Student @ Marwadi University 
+💡 Passionate about AI, Software Development & Building Cool Systems 
+🧠 Currently learning Full Stack + AI Engineering
+💀 Building ODDSOCEAN, an e-Sports org for passionate underdogs
 
-Here are some ideas to get you started:
+---
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+## 🛠 Tech Stack
+
+💻 Languages  
+JavaScript | TypeScript | Python | HTML 
+
+⚙️ Frameworks  
+React | Node.js 
+
+🗄 Databases  
+Learning | Improving
+
+---
+
+## 🚀 Projects
+
+🔹 Weather Forecast App  
+Real-time weather app using APIs.
+
+🔹 React Todo Manager  
+Task management system with validation.
+
+🔹 Feedback Auto Mail  
+Automated feedback email system.
+
+🔹 Add and learning More...
+
+---
+
+## 📊 GitHub Stats
+
+![Ayush's GitHub stats](https://github-readme-stats.vercel.app/api?username=ius-sharma&show_icons=true)
+
+
+---
+
+
+## 🌐 Connect With Me
+
+LinkedIn  -- https://www.linkedin.com/in/ayush-sharma-833163320/
+Email -- sharmaeditzayush@gmail.com
+instagram -- https://www.instagram.com/ius.sharma
+Youtube -- https://www.youtube.com/@ocnayush

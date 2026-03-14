@@ -34,7 +34,7 @@ Task management system with validation.
 🔹 Feedback Auto Mail  
 Automated feedback email system.
 
-🔹 Add and learning More...
+🔹 Adding and learning More...
 
 ---
 

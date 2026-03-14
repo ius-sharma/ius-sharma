@@ -1,8 +1,11 @@
 ## Hi folks👋, It's Ayush Sharma
 
 🚀 B.Tech Student @ Marwadi University 
-💡 Passionate about AI, Software Development & Building Cool Systems 
+
+💡 Passionate about AI, Software Development & Building Cool Systems
+
 🧠 Currently learning Full Stack + AI Engineering
+
 💀 Building ODDSOCEAN, an e-Sports org for passionate underdogs
 
 ---

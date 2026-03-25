@@ -1,57 +1,65 @@
-## Hi folks👋, It's Ayush Sharma
+# Hi folks 👋, I'm Ayush Sharma
 
-🚀 B.Tech Student @ Marwadi University 
+🚀 B.Tech Student @ Marwadi University  
+💡 Passionate about AI, Software Development & Building Real Systems  
+🧠 Currently learning Full Stack + AI Engineering  
+💀 Building ODDSOCEAN — an eSports org for passionate underdogs  
 
-💡 Passionate about AI, Software Development & Building Cool Systems
+---
 
-🧠 Currently learning Full Stack + AI Engineering
+## 🧠 About Me
 
-💀 Building ODDSOCEAN, an e-Sports org for passionate underdogs
+- ⚡ I love building things that solve real problems  
+- 🚀 Exploring AI + Backend Systems  
+- 📈 Currently improving consistency & system design skills  
+- 🎯 Goal: Become a top 1% engineer  
 
 ---
 
 ## 🛠 Tech Stack
 
 💻 Languages  
-JavaScript | TypeScript | Python | HTML 
+JavaScript | TypeScript | Python | HTML  
 
-⚙️ Frameworks  
-React | Node.js 
+⚙️ Frameworks & Tools  
+React | Node.js | Express | Git | GitHub  
 
 🗄 Databases  
-Learning | Improving
+MongoDB (Learning & Building)  
 
 ---
 
 ## 🚀 Projects
 
-🔹 Weather Forecast App  
-Real-time weather app using APIs.
+🔹 **Weather Forecast App**  
+Real-time weather application using external APIs  
 
-🔹 React Todo Manager  
-Task management system with validation.
+🔹 **React Todo Manager**  
+Task management system with clean UI & validation  
 
-🔹 Feedback Auto Mail  
-Automated feedback email system.
+🔹 **Feedback Auto Mail System**  
+Automated email response system  
 
-🔹 Adding and learning More...
+🚧 More advanced projects coming soon...  
 
 ---
 
 ## 📊 GitHub Stats
 
-![Ayush's GitHub stats](https://github-readme-stats.vercel.app/api?username=ius-sharma&show_icons=true)
-
+![Ayush's GitHub stats](https://github-readme-stats.vercel.app/api?username=ius-sharma&show_icons=true&theme=tokyonight)
 
 ---
 
-
 ## 🌐 Connect With Me
 
-LinkedIn  -- https://www.linkedin.com/in/ayush-sharma-833163320/
+🔗 LinkedIn  
+https://www.linkedin.com/in/ayush-sharma-833163320/
 
-Email -- sharmaeditzayush@gmail.com
+📧 Email  
+sharmaeditzayush@gmail.com  
 
-instagram -- https://www.instagram.com/ius.sharma
+📸 Instagram  
+https://www.instagram.com/ius.sharma  
 
-Youtube -- https://www.youtube.com/@ocnayush
+▶️ YouTube  
+https://www.youtube.com/@ocnayush

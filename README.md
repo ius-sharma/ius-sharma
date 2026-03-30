@@ -94,8 +94,8 @@ I'm a B.Tech Computer Science student building **real, deployed applications** â
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=ius-sharma&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&cache_seconds=1800" height="165" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ius-sharma&layout=compact&theme=tokyonight&hide_border=true&cache_seconds=1800" height="165" />
+<img src="https://readme-stats-tau-rouge.vercel.app/api?username=ius-sharma&show_icons=true&theme=tokyonight&hide_border=true" height="165" />
+<img src="https://readme-stats-tau-rouge.vercel.app/api/top-langs/?username=ius-sharma&layout=compact&theme=tokyonight&hide_border=true" height="165" />
 
 <br/>
 

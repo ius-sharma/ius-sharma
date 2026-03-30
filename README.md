@@ -95,7 +95,6 @@ I'm a B.Tech Computer Science student building **real, deployed applications** â
 <div align="center">
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ius-sharma&theme=tokyonight" height="165" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ius-sharma&theme=tokyonight" height="165" />
 <img src="https://streak-stats.demolab.com?user=ius-sharma&theme=tokyonight&hide_border=true" height="165" />
 
 </div>

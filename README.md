@@ -3,9 +3,9 @@
 ![Visitor Count](https://komarev.com/ghpvc/?username=ius-sharma&color=0e75b6&style=flat)
 
 # Ayush Sharma
-**Full Stack Developer · AI Engineering Enthusiast · B.Tech @ Marwadi University**
+**Full Stack Developer · AI Engineering Enthusiast · B.Tech CS @ Marwadi University**
 
-🤝 Open to internships, collaborations & real-world projects
+🤝 Actively looking for SDE Internships — Full Stack & AI Engineering roles
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-sharma-833163320/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sharmaeditzayush@gmail.com)
@@ -18,12 +18,13 @@
 
 ## 👨‍💻 About Me
 
-I'm a B.Tech student focused on building **production-ready full stack applications** and exploring **AI-integrated systems**. I care about writing clean code, shipping real projects, and solving problems that matter.
+I'm a B.Tech Computer Science student building **real, deployed applications** — not just tutorials. I focus on full stack development with AI integration using modern LLM APIs, and I care about clean architecture and shipping things that actually work.
 
 - 🔭 Currently building: **ODDSOCEAN** — an eSports org for passionate underdogs
-- 🌱 Learning: Full Stack Development · AI Engineering · System Design
+- 🌱 Exploring: AI Engineering · System Design · Backend Architecture
+- 💡 I build with: React, Node.js, Express, MongoDB, Groq API (LLaMA 3)
 - 🎯 Goal: Land a strong SDE internship and grow into a top 1% engineer
-- 💬 Ask me about: React, Node.js, REST APIs, or building your first real project
+- 💬 Ask me about: AI-integrated apps, REST APIs, or full stack architecture
 
 ---
 
@@ -41,44 +42,51 @@ I'm a B.Tech student focused on building **production-ready full stack applicati
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
 ![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
 
-**Databases**
+**Databases & AI**
 
 ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![Groq](https://img.shields.io/badge/Groq_API_(LLaMA_3)-FF6B35?style=for-the-badge&logoColor=white)
+
+**Deployment**
+
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-181717?style=for-the-badge&logo=github&logoColor=white)
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🌦️ Weather Forecast App
-> Real-time weather application built with external APIs, live data rendering, and responsive UI.
+### 🤖 AI Resume Analyzer
+> Upload a resume PDF and get an AI-powered score out of 100, missing skills detection, and structured improvement suggestions — all powered by Groq (LLaMA 3).
 
-![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
-· [View Repo](https://github.com/ius-sharma) <!-- Replace with actual link -->
+**Stack:** React · Tailwind CSS · Node.js · Express · Groq API · pdf-parse
 
----
-
-### ✅ React Todo Manager
-> Task management system with component-based architecture, state management, and input validation.
-
-![React](https://img.shields.io/badge/-React-61DAFB?style=flat&logo=react&logoColor=black)
-· [View Repo](https://github.com/ius-sharma) <!-- Replace with actual link -->
+[![Live Demo](https://img.shields.io/badge/Live_Demo-00C853?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-resume-analyzer-orcin-rho.vercel.app/)
+[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ius-sharma/ai-resume-analyzer)
 
 ---
 
-### 📧 Feedback Auto Mail System
-> Automated email response system demonstrating backend logic, API integration, and workflow automation.
+### 🔍 AI Code Reviewer
+> Paste your code and get instant AI-powered review — suggestions, bug detection, and best practice feedback using LLM APIs.
 
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
-![Express](https://img.shields.io/badge/-Express-000000?style=flat&logo=express&logoColor=white)
-· [View Repo](https://github.com/ius-sharma) <!-- Replace with actual link -->
+**Stack:** React · Node.js · Express · Groq API
+
+[![View Repo](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ius-sharma/ai-code-reviewer)
 
 ---
 
-🔧 *More projects in progress — including AI-integrated and full stack production apps.*
+### 🤝 Bhaichara — AI Student Support Platform
+> A full stack platform where students can talk to an AI companion about stress, studies, and campus life. Includes mood detection, friend system, conversation history, and profile avatars. Full frontend + backend architecture deployed on GitHub Pages & Render.
+
+**Stack:** React · Vite · Node.js · Express · MongoDB Atlas · Groq API · GitHub Pages · Render
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-00C853?style=for-the-badge&logo=githubpages&logoColor=white)](https://ius-sharma.github.io/bhaichara-client/)
+[![Frontend Repo](https://img.shields.io/badge/Frontend_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ius-sharma/bhaichara-client)
 
 ---
 
@@ -86,11 +94,12 @@ I'm a B.Tech student focused on building **production-ready full stack applicati
 
 <div align="center">
 
-![Ayush's GitHub Stats](https://github-readme-stats.vercel.app/api?username=ius-sharma&show_icons=true&theme=tokyonight&hide_border=true)
+<img src="https://github-readme-stats.vercel.app/api?username=ius-sharma&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="165" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ius-sharma&layout=compact&theme=tokyonight&hide_border=true" height="165" />
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ius-sharma&layout=compact&theme=tokyonight&hide_border=true)
+<br/>
 
-![GitHub Streak](https://streak-stats.demolab.com?user=ius-sharma&theme=tokyonight&hide_border=true)
+<img src="https://streak-stats.demolab.com?user=ius-sharma&theme=tokyonight&hide_border=true" height="165" />
 
 </div>
 
@@ -98,7 +107,7 @@ I'm a B.Tech student focused on building **production-ready full stack applicati
 
 ## 🏢 Venture — ODDSOCEAN
 
-I'm the founder of **ODDSOCEAN**, an eSports organization built for underdogs — players who are passionate but overlooked. We're building a community, a brand, and eventually a competitive team.
+I'm the founder of **ODDSOCEAN**, an eSports organization built for underdogs — players who are passionate but overlooked by mainstream orgs. Building the community, brand, and competitive team from scratch.
 
 > *Built from zero. Driven by passion.*
 
@@ -106,7 +115,7 @@ I'm the founder of **ODDSOCEAN**, an eSports organization built for underdogs �
 
 ## 📬 Let's Connect
 
-I'm actively looking for **SDE internships** in full stack or AI engineering roles. If you're hiring or open to collaborating, let's talk.
+I'm actively looking for **SDE internships** in full stack or AI engineering. If you're hiring or want to collaborate on something real, reach out — I respond fast.
 
 📧 [sharmaeditzayush@gmail.com](mailto:sharmaeditzayush@gmail.com)
 🔗 [linkedin.com/in/ayush-sharma-833163320](https://www.linkedin.com/in/ayush-sharma-833163320/)

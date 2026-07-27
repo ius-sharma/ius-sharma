@@ -11,7 +11,7 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-sharma-833163320/)
 [![Email](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sharmaeditzayush@gmail.com)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@ocnayush)
-[![BoringTools](https://img.shields.io/badge/BoringTools-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://boring-tools-nine.vercel.app/)
+[![ODDSOCEAN](https://img.shields.io/badge/ODDSOCEAN-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://oddsocean.in)
 
 </div>
 

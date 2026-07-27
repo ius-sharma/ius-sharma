@@ -17,7 +17,7 @@
 
 ---
 
-## 🧠 Who am I?
+##  Who am I?
 
 B.Tech CS student @ Marwadi University, Semester 5. I build full-stack apps with AI baked in — not as a gimmick, but because it's the most interesting problem space right now.
 
@@ -30,7 +30,7 @@ I'm actively hunting for **SDE internships** — Full Stack or AI Engineering. I
 
 ---
 
-## ⚡ What I work with
+##  What I work with
 
 ```
 Languages    →  JavaScript · TypeScript · Python · HTML/CSS
@@ -44,7 +44,7 @@ Tools        →  Git · GitHub · ESLint · Postman
 
 ---
 
-## 🚀 Projects
+##  Projects
 
 ### 🔧 BoringTools — 100 Days. 100 Tools.
 > *"Boring problems. Simple tools."*
@@ -60,7 +60,7 @@ Tools shipped so far: JSON Formatter · Image Compressor · Resume Bullet Rewrit
 
 ---
 
-### 🤖 AI Resume Analyzer
+###  AI Resume Analyzer
 > Upload a PDF résumé → get an AI score out of 100, missing skills flagged, and improvement suggestions — all in seconds.
 
 **Stack:** React · Node.js · Express · Groq API (LLaMA 3) · pdf-parse · Tailwind CSS
@@ -70,7 +70,7 @@ Tools shipped so far: JSON Formatter · Image Compressor · Resume Bullet Rewrit
 
 ---
 
-### 🔍 AI Code Reviewer
+###  AI Code Reviewer
 > Paste code → get instant AI-powered review: bugs, suggestions, best practices. No setup, no friction.
 
 **Stack:** React · Node.js · Express · Groq API
@@ -79,7 +79,7 @@ Tools shipped so far: JSON Formatter · Image Compressor · Resume Bullet Rewrit
 
 ---
 
-### 🤝 Bhaichara — AI Student Companion
+###  Bhaichara — AI Student Companion
 > A full-stack platform where students can talk through stress, studies, and campus life with an AI. Mood detection, conversation history, friend system, profile avatars — the works.
 
 **Stack:** React · Vite · Node.js · Express · MongoDB Atlas · Groq API · GitHub Pages · Render
@@ -89,7 +89,7 @@ Tools shipped so far: JSON Formatter · Image Compressor · Resume Bullet Rewrit
 
 ---
 
-## 📊 GitHub Activity
+##  GitHub Activity
 
 <div align="center">
 
@@ -100,15 +100,17 @@ Tools shipped so far: JSON Formatter · Image Compressor · Resume Bullet Rewrit
 
 ---
 
-## 🎮 Beyond Code — ODDSOCEAN
+##  Beyond Code — ODDSOCEAN
 
 I'm the founder of **ODDSOCEAN**, an eSports organization built for passionate players who don't fit the mainstream mold. Building the community, brand, and competitive roster from zero — because the underdog story is more interesting anyway.
+
+Visit - https://oddsocean.in
 
 ---
 
 ## 📬 Open to Internships
 
-I'm looking for **SDE internships** in full stack or AI engineering. I respond fast, I ship faster.
+I'm looking for **SDE internships** in full-stack or AI engineering. I respond fast, I ship faster.
 
 📧 [sharmaeditzayush@gmail.com](mailto:sharmaeditzayush@gmail.com)
 🔗 [linkedin.com/in/ayush-sharma-833163320](https://www.linkedin.com/in/ayush-sharma-833163320/)

@@ -4,7 +4,7 @@
 
 # Hey, I'm Ayush Sharma 👋
 
-**Full Stack Developer × AI Builder × Underdog by choice**
+**Full Stack Developer × AI Builder × Normal By Choice**
 
 *I don't just learn web dev — I ship things. Real apps. Real problems. Real code.*
 
@@ -19,7 +19,7 @@
 
 ## 🧠 Who am I?
 
-B.Tech CS student @ Marwadi University, Semester 4. I build full-stack apps with AI baked in — not as a gimmick, but because it's the most interesting problem space right now.
+B.Tech CS student @ Marwadi University, Semester 5. I build full-stack apps with AI baked in — not as a gimmick, but because it's the most interesting problem space right now.
 
 While most students are doing todo apps, I'm building:
 - 🛠️ A **100-tool challenge** shipped live on the web

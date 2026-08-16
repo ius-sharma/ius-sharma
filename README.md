@@ -19,14 +19,7 @@
 
 ##  Who am I?
 
-B.Tech CS student @ Marwadi University, Semester 5. I build full-stack apps with AI baked in — not as a gimmick, but because it's the most interesting problem space right now.
-
-While most students are doing todo apps, I'm building:
-- 🛠️ A **100-tool challenge** shipped live on the web
-- 🤖 AI-powered apps using LLaMA 3 via Groq API
-- 🎮 An **eSports org** for the overlooked and underrated
-
-I'm actively hunting for **SDE internships** — Full Stack or AI Engineering. If you're building something real, let's talk.
+B.Tech CS student @ Marwadi University, Semester 5. I build full-stack apps with AI baked in, ship daily-built micro-tools, and run an eSports org on the side. Actively hunting for **SDE internships** — Full Stack or AI Engineering. If you're building something real, let's talk.
 
 ---
 
@@ -54,28 +47,10 @@ Tools        →  Git · GitHub · ESLint · Postman
 
 ---
 
-##  GitHub Activity
+##  Beyond Code
 
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=ius-sharma&theme=tokyonight" height="165" />
-<img src="https://streak-stats.demolab.com?user=ius-sharma&theme=tokyonight&hide_border=true" height="165" />
-
-</div>
+Founder of **[ODDSOCEAN](https://oddsocean.in)** — an eSports org built for the underdogs.
 
 ---
 
-##  Beyond Code — ODDSOCEAN
-
-I'm the founder of **ODDSOCEAN**, an eSports organization built for passionate players who don't fit the mainstream mold. Building the community, brand, and competitive roster from zero — because the underdog story is more interesting anyway.
-
-Visit - https://oddsocean.in
-
----
-
-## 📬 Open to Internships
-
-I'm looking for **SDE internships** in full-stack or AI engineering. I respond fast, I ship faster.
-
-📧 [sharmaeditzayush@gmail.com](mailto:sharmaeditzayush@gmail.com)
-🔗 [linkedin.com/in/ayush-sharma-833163320](https://www.linkedin.com/in/ayush-sharma-833163320/)
+📧 [sharmaeditzayush@gmail.com](mailto:sharmaeditzayush@gmail.com) · 🔗 [LinkedIn](https://www.linkedin.com/in/ayush-sharma-833163320/)

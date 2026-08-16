@@ -46,46 +46,11 @@ Tools        →  Git · GitHub · ESLint · Postman
 
 ##  Projects
 
-### 🔧 BoringTools — 100 Days. 100 Tools.
-> *"Boring problems. Simple tools."*
-
-A live growing collection of browser-first micro-utilities — no signup, no tracking, no fluff. Built daily in public. Currently **24 tools live** and counting.
-
-**Stack:** Next.js · Tailwind CSS · Vercel
-
-Tools shipped so far: JSON Formatter · Image Compressor · Resume Bullet Rewriter · YouTube Title Generator · Pomodoro Timer · GST Calculator · LinkedIn Post Formatter · Currency Converter · and 16 more.
-
-[![Live Site](https://img.shields.io/badge/Live_Site-6366f1?style=for-the-badge&logo=vercel&logoColor=white)](https://boring-tools-nine.vercel.app/)
-[![GitHub](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ius-sharma/boring-tools)
-
----
-
-###  AI Resume Analyzer
-> Upload a PDF résumé → get an AI score out of 100, missing skills flagged, and improvement suggestions — all in seconds.
-
-**Stack:** React · Node.js · Express · Groq API (LLaMA 3) · pdf-parse · Tailwind CSS
-
-[![Live Demo](https://img.shields.io/badge/Live_Demo-00C853?style=for-the-badge&logo=vercel&logoColor=white)](https://ai-resume-analyzer-orcin-rho.vercel.app/)
-[![GitHub](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ius-sharma/ai-resume-analyzer)
-
----
-
-###  AI Code Reviewer
-> Paste code → get instant AI-powered review: bugs, suggestions, best practices. No setup, no friction.
-
-**Stack:** React · Node.js · Express · Groq API
-
-[![GitHub](https://img.shields.io/badge/View_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ius-sharma/ai-code-reviewer)
-
----
-
-###  Bhaichara — AI Student Companion
-> A full-stack platform where students can talk through stress, studies, and campus life with an AI. Mood detection, conversation history, friend system, profile avatars — the works.
-
-**Stack:** React · Vite · Node.js · Express · MongoDB Atlas · Groq API · GitHub Pages · Render
-
-[![Live Demo](https://img.shields.io/badge/Live_Demo-00C853?style=for-the-badge&logo=githubpages&logoColor=white)](https://ius-sharma.github.io/bhaichara-client/)
-[![GitHub](https://img.shields.io/badge/Frontend_Repo-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ius-sharma/bhaichara-client)
+| Project | Status | Stack | Links |
+|---|---|---|---|
+| 🔧 **BoringTools** — 100 Days, 100 Tools. Browser-first micro-utilities, no signup, no fluff. | ✅ Done | Next.js · Tailwind · Vercel | [Live](https://boring-tools-nine.vercel.app/) · [Repo](https://github.com/ius-sharma/boring-tools) |
+| 🎬 **YT Shorts Clipper** — Turns a YouTube video into ready-to-post Shorts automatically. | 🔨 In Progress | Python · FastAPI · Next.js | Coming soon |
+| 🧩 **ArrowGoPlus** — Feature-rich Arrow Puzzle clone with cloud save, leaderboards & level editor. | 🔜 Up Next | ASP.NET Core MVC · .NET 8 | Coming soon |
 
 ---
 

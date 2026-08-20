@@ -56,12 +56,8 @@ I also run an **eSports organization on the side.**
 # 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ius-sharma&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true" height="180"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ius-sharma&layout=compact&theme=tokyonight&hide_border=true&langs_count=8" height="180"/>
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=ius-sharma&theme=tokyonight&hide_border=true" height="180"/>
+  <img src="./profile/stats.svg" height="180" alt="Ayush's GitHub Stats" />
+  <img src="./profile/top-langs.svg" height="180" alt="Top Languages" />
 </p>
 
 

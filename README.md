@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hey, I'm Ayush Sharma 😎
+# Hey, I'm Ayush Sharma
 ### Building things, failing at them, learning from that failure, and improving daily.
 
 <br>

@@ -8,12 +8,12 @@ I work on projects that solve real-world problems, add value to people's lives, 
 
 I also run an **eSports organization on the side.**
 
-> 🚫 Not open for free-work opportunities.
-> 🤝 If you're building something real, **let's talk. I'm always open to building something meaningful together.**
+>  Not open for free-work opportunities.
+>  If you're building something real, **let's talk. I'm always open to building something meaningful together.**
 
 ---
 
-## 🧠 What I Work With
+##  What I Work With
 
 ### Languages
 
@@ -53,27 +53,29 @@ I also run an **eSports organization on the side.**
 
 ---
 
-# 📊 GitHub Stats
+# GitHub Stats
 
 <p align="center">
   <img src="./profile/stats.svg" height="180" alt="Ayush's GitHub Stats" />
-  <img src="./profile/top-langs.svg" height="180" alt="Top Languages" />
+  <img src="./profile/top-langs.svg" height="180" alt="Most Used Languages" />
+  <img src="./profile/streak.svg" height="180" alt="GitHub Streak" />
 </p>
+
 
 
 ---
 
-# 🚀 Projects
+# Projects
 
 | Project                                                                                             | Status         | Stack                       | Links                                                                                              |
 | --------------------------------------------------------------------------------------------------- | -------------- | --------------------------- | -------------------------------------------------------------------------------------------------- |
 | 🔧 **BoringTools** — 100 Days, 100 Tools. Browser-first micro-utilities, no signup, no fluff.       | ✅ Done         | Next.js · Tailwind · Vercel | [Live](https://boring-tools-nine.vercel.app/) · [Repo](https://github.com/ius-sharma/boring-tools) |
-| 🎬 **YT Shorts Clipper** — Turns a YouTube video into ready-to-post Shorts automatically.           | 🔨 In Progress | Python · FastAPI · Next.js  | Coming soon                                                                                        |
-| 🧩 **ArrowGoPlus** — Feature-rich Arrow Puzzle clone with cloud saves, leaderboards & level editor. | 🔜 Up Next     | ASP.NET Core MVC · .NET 8   | Coming soon                                                                                        |
+|  **YT Shorts Clipper** — Turns a YouTube video into ready-to-post Shorts automatically.           | 🔨 In Progress | Python · FastAPI · Next.js  | Coming soon                                                                                        |
+|  **ArrowGoPlus** — Feature-rich Arrow Puzzle clone with cloud saves, leaderboards & level editor. | 🔜 Up Next     | ASP.NET Core MVC · .NET 8   | Coming soon                                                                                        |
 
 ---
 
-# 🌊 Beyond Code
+# Beyond Code
 
 ## Founder of [**ODDSOCEAN**](https://oddsocean.in/)
 
@@ -83,7 +85,7 @@ We're building toward a gaming ecosystem where talented players and creators get
 
 ---
 
-# 🤝 Let's Connect
+# Let's Connect
 
 <p align="left">
   <a href="https://www.linkedin.com/in/ayush-sharma-833163320/">
@@ -105,5 +107,5 @@ We're building toward a gaming ecosystem where talented players and creators get
 ### 💭 *Build → Fail → Learn → Improve → Repeat.*
 
 <p align="center">
-  <i>Thanks for stopping by. 🚀</i>
+  <i>Thanks for stopping by.</i>
 </p>

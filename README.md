@@ -1,23 +1,22 @@
-# Hey everyone, Here's your loved Ayush Sharma. 😎
-
-**Building Things Where I Fail, Learn from that failure, and improve daily**
-
----
-
-##  Here are a few things I think you should know about me.
-
-I'm a B.Tech CE student @ Marwadi University, Semester 5. I work on projects that really solve my and everyone's problems in real life, add some values thier life, and run an eSports org on the side. Not open for any free work. If you're building something real, let's talk ( in this way I'm Free ).
+# Hey everyone, here's your loved Ayush Sharma. 😎
+**Building things, failing at them, learning from that failure, and improving daily.**
 
 ---
 
-##  What I work with
+## A few things you should know about me
+I'm a B.Tech CE student @ Marwadi University, Semester 5. I work on projects that solve real problems — mine and everyone else's — and add real value to people's lives. I also run an eSports org on the side.
 
+Not available for free work — but if you're building something real, let's talk.
+
+---
+
+## What I work with
 ```
 Languages    →  JavaScript · TypeScript · Python · HTML/CSS
 Frontend     →  React · Vite · Next.js · Tailwind CSS
 Backend      →  Node.js · Express.js · REST APIs
 Database     →  MongoDB Atlas
-AI / LLMs    →  Groq API · LLaMA 3 · pdf-parse · prompt engineering
+AI / LLMs    →  Groq API · LLaMA 3 · pdf-parse · Prompt Engineering
 Deploy       →  Vercel · Render · GitHub Pages
 Tools        →  Git · GitHub · ESLint · Postman
 ```
@@ -29,8 +28,7 @@ Tools        →  Git · GitHub · ESLint · Postman
 
 ---
 
-##  Projects
-
+## Projects
 | Project | Status | Stack | Links |
 |---|---|---|---|
 | 🔧 **BoringTools** — 100 Days, 100 Tools. Browser-first micro-utilities, no signup, no fluff. | ✅ Done | Next.js · Tailwind · Vercel | [Live](https://boring-tools-nine.vercel.app/) · [Repo](https://github.com/ius-sharma/boring-tools) |
@@ -39,10 +37,10 @@ Tools        →  Git · GitHub · ESLint · Postman
 
 ---
 
-##  Beyond Code
-
+## Beyond Code
 Founder of **[ODDSOCEAN](https://oddsocean.in)** — an eSports org built for the underdogs.
 
 ---
 
 📧 [sharmaeditzayush@gmail.com](mailto:sharmaeditzayush@gmail.com) · 🔗 [LinkedIn](https://www.linkedin.com/in/ayush-sharma-833163320/)
+```

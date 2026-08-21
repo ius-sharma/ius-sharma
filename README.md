@@ -1,4 +1,4 @@
-# Hey everyone, here's your loved Ayush Sharma. 😎
+# Hey everyone, here's your loved Ayush Sharma.
 
 ### **Building things, failing, learning from those failures, and improving every day.**
 

@@ -103,8 +103,6 @@ We're building toward a gaming ecosystem where talented players and creators get
 </p>
 
 
-![GitHub Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=ius-sharma&theme=tokyo-night&area=true&hide_border=true)
-
 ## 🌐 Connect With Me
 
 <p align="left">
@@ -120,3 +118,5 @@ We're building toward a gaming ecosystem where talented players and creators get
 <p align="center">
   <i>Thanks for stopping by. [ BTW Cristiano is Goat ]</i>
 </p>
+
+![GitHub Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=ius-sharma&theme=tokyo-night&area=true&hide_border=true)

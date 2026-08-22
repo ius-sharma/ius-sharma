@@ -102,6 +102,9 @@ We're building toward a gaming ecosystem where talented players and creators get
   </a>
 </p>
 
+
+![GitHub Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=ius-sharma&theme=tokyo-night&area=true&hide_border=true)
+
 ---
 
 ### 💭 *Build → Fail → Learn → Improve → Repeat.*

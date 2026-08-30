@@ -69,7 +69,7 @@ I also run an **eSports organization on the side.**
 
 | Project                                                                                             | Status         | Stack                       | Links                                                                                              |
 | --------------------------------------------------------------------------------------------------- | -------------- | --------------------------- | -------------------------------------------------------------------------------------------------- |
-| 🔧 **BoringTools** — 100 Days, 100 Tools. Browser-first micro-utilities, no signup, no fluff.       | ✅ Done         | Next.js · Tailwind · Vercel | [Live](https://boring-tools-nine.vercel.app/) · [Repo](https://github.com/ius-sharma/boring-tools) |
+| 🔧 **BoringTools** — 100 Days, 100 Tools. Browser-first micro-utilities, no signup, no fluff.       | ✅ Done         | Next.js · Tailwind · Vercel | [Live](https://www.boringtoolsai.com/) · [Repo](https://github.com/ius-sharma/boring-tools) |
 |  **YT Shorts Clipper** — Turns a YouTube video into ready-to-post Shorts automatically.           | 🔨 In Progress | Python · FastAPI · Next.js  | Coming soon                                                                                        |
 |  **ArrowGoPlus** — Feature-rich Arrow Puzzle clone with cloud saves, leaderboards & level editor. | 🔜 Up Next     | ASP.NET Core MVC · .NET 8   | Coming soon                                                                                        |
 

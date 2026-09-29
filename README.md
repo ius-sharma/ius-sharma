@@ -116,5 +116,5 @@ We're building toward a gaming ecosystem where talented players and creators get
 ### 💭 *Build → Fail → Learn → Improve → Repeat.*
 
 <p align="center">
-  <i>Thanks for stopping by. [ BTW Cristiano is Goat ]</i>
+  <i>Thanks for stopping by. [ BTW, Cristiano is the GOAT]</i>
 </p>

@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">AYUSH SHARMA&#39;s GitHub Stats, Rank: C+</title>
-        <desc id="descId">Total Stars Earned: 9, Total Commits  : 472, Total PRs: 18, Total Issues: 3, Contributed to (last year): 13</desc>
+        <desc id="descId">Total Stars Earned: 11, Total Commits  : 543, Total PRs: 18, Total Issues: 3, Contributed to (last year): 13</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,7 +73,7 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 193.7544388202809;
+        stroke-dashoffset: 189.5625223131917;
       }
     }
   
@@ -169,7 +169,7 @@
         x="224.01"
         y="12.5"
         data-testid="stars"
-      >9</text>
+      >11</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -184,7 +184,7 @@
         x="224.01"
         y="12.5"
         data-testid="commits"
-      >472</text>
+      >543</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">

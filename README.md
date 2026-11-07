@@ -60,8 +60,13 @@ I also run an **eSports organization on the side.**
   <img src="./profile/top-langs.svg" height="180" alt="Most Used Languages" />
   <img src="./profile/streak.svg" height="180" alt="GitHub Streak" />
 </p>
+---
 
+## 🐟 My GitHub Koi
 
+<p align="center">
+  <img src="./koi/koi.gif" width="300" alt="My GitHub Koi" />
+</p>
 
 ---
 

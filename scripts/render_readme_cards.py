@@ -463,6 +463,81 @@ def social_badges():
         write(f"badge-{key}.svg", svg(w, h, body, ["sans", "sans-b"], f"{label} profile", bottom=0))
 
 
+CR7_ASCII_LINES = [
+    r"        _..._        ",
+    r"      .:::::::.      ",
+    r"     :::::::::::     ",
+    r"     ':::::::::'     ",
+    r"        ':::'        ",
+    r"_         |         _",
+    r" \       / \       / ",
+    r"  \_____/ 7 \_____/  ",
+    r"   \     ###     /   ",
+    r"    \   #####   /    ",
+    r"     \ ####### /     ",
+    r"      \ ##### /      ",
+    r"       \ ### /       ",
+    r"        \ # /        ",
+    r"        _\_/_        ",
+    r"       /     \       ",
+    r"      /  / \  \      ",
+    r"     /  /   \  \     ",
+    r"    /  /     \  \    ",
+    r"   /__/       \__\   ",
+    r"    S I U U U U !    ",
+]
+
+
+def cr7_quote_card():
+    w = 880
+    h = 230
+    ascii_lines_svg = []
+    y_start = 28
+    line_h = 9.2
+    for i, line in enumerate(CR7_ASCII_LINES[:-1]):
+        y = y_start + i * line_h
+        escaped_line = escape(line)
+        ascii_lines_svg.append(
+            f'<text x="700" y="{y:.1f}" text-anchor="middle" font-family="{MONO}" '
+            f'font-size="9" fill="{ORANGE_ACCENT}" opacity="0.9" xml:space="preserve">{escaped_line}</text>'
+        )
+
+    last_y = y_start + (len(CR7_ASCII_LINES) - 1) * line_h + 3
+    ascii_lines_svg.append(
+        f'<text x="700" y="{last_y:.1f}" text-anchor="middle" font-family="{MONO}" '
+        f'font-size="10.5" font-weight="700" letter-spacing="2" fill="{ORANGE_DEEP}" xml:space="preserve">S I U U U U !</text>'
+    )
+    ascii_block = "\n".join(ascii_lines_svg)
+
+    pill_text = "CR7 &#x00B7; THE GOAT &#x1F410;"
+    pill_w = 158
+
+    body = f"""
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{CARD_BG}" stroke="{CARD_BORDER}" stroke-width="1"/>
+<g class="r" {d(0.2)}>
+  <rect x="36" y="26" width="{pill_w}" height="24" rx="12" fill="#2a1705" stroke="{ORANGE_ACCENT}" stroke-width="1" stroke-opacity="0.7"/>
+  <circle cx="48" cy="38" r="2.5" fill="{ORANGE_ACCENT}"/>
+  <text x="58" y="42" font-family="{MONO}" font-size="10.5" font-weight="600" letter-spacing="0.5" fill="{ORANGE_ACCENT}">{pill_text}</text>
+
+  <text x="36" y="96" font-family="{SERIF}" font-size="32" fill="{TEXT_MAIN}">Build &#x2192; Fail &#x2192; Learn</text>
+  <text x="36" y="136" font-family="{SERIF}" font-size="32" fill="{TEXT_MAIN}">Improve &#x2192; <tspan font-style="italic" fill="{ORANGE_ACCENT}">Repeat.</tspan></text>
+
+  <rect x="36" y="160" width="450" height="1" fill="{RULE}" opacity="0.4"/>
+
+  <text x="36" y="186" font-family="{SANS}" font-weight="500" font-size="14" fill="{TEXT_MAIN}">Thanks for stopping by.</text>
+  <text x="36" y="206" font-family="{SANS}" font-size="13" fill="{MUTED}">Keep building something real.</text>
+</g>
+
+<line x1="520" y1="24" x2="520" y2="206" stroke="{CARD_BORDER}" stroke-dasharray="3 3" opacity="0.5"/>
+
+<g class="r" {d(0.4)}>
+{ascii_block}
+</g>
+"""
+    write("quote.svg", svg(w, h, body, ["serif", "serif-i", "sans", "sans-b", "mono"],
+                           "Build, Fail, Learn, Repeat - Cristiano Ronaldo SIUU", bottom=12))
+
+
 if __name__ == "__main__":
     if not os.path.exists(DATA):
         print(f"Error: {DATA} not found. Run scripts/fetch_contributions.py first.")
@@ -478,4 +553,5 @@ if __name__ == "__main__":
     beyond_code()
     connect()
     social_badges()
+    cr7_quote_card()
     print("Done! Rendered all profile cards and social badges into cards/")

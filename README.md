@@ -49,7 +49,6 @@ I also run an **eSports organization on the side.**
 
 ---
 
-<p align="center">
-  <i>Build → Fail → Learn → Improve → Repeat.</i><br>
-  <b>Thanks for stopping by. [ BTW, Cristiano is the GOAT 🐐 ]</b>
-</p>
+<div align="center">
+  <img src="./cards/quote.svg" width="100%" alt="Build, Fail, Learn, Repeat - Cristiano Ronaldo SIUU" />
+</div>

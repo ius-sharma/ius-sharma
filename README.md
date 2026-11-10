@@ -40,11 +40,11 @@ I also run an **eSports organization on the side.**
 </div>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/ayush-sharma-833163320/">linkedin</a> &nbsp;/&nbsp;
-  <a href="mailto:sharmaeditzayush@gmail.com">email</a> &nbsp;/&nbsp;
-  <a href="https://oddsocean.in/">oddsocean</a> &nbsp;/&nbsp;
-  <a href="https://www.youtube.com/@ocnayush">youtube</a> &nbsp;/&nbsp;
-  <a href="https://github.com/ius-sharma">github</a>
+  <a href="https://www.linkedin.com/in/ayush-sharma-833163320/"><img src="./cards/badge-linkedin.svg" height="32" alt="LinkedIn" /></a> &nbsp;
+  <a href="mailto:sharmaeditzayush@gmail.com"><img src="./cards/badge-email.svg" height="32" alt="Email" /></a> &nbsp;
+  <a href="https://www.instagram.com/ius.sharma"><img src="./cards/badge-instagram.svg" height="32" alt="Instagram" /></a> &nbsp;
+  <a href="https://www.youtube.com/@ocnayush"><img src="./cards/badge-youtube.svg" height="32" alt="YouTube" /></a> &nbsp;
+  <a href="https://oddsocean.in/"><img src="./cards/badge-oddsocean.svg" height="32" alt="ODDSOCEAN" /></a>
 </p>
 
 ---

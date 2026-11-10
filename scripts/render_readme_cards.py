@@ -17,6 +17,7 @@ from html import escape
 HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.join(HERE, "..")
 DATA = os.path.join(ROOT, "data", "contributions.json")
+DATA_SIUU = os.path.join(ROOT, "data", "ronaldo_siuuu.txt")
 OUT = os.path.join(ROOT, "cards")
 FONTS = os.path.join(ROOT, "fonts")
 
@@ -463,79 +464,79 @@ def social_badges():
         write(f"badge-{key}.svg", svg(w, h, body, ["sans", "sans-b"], f"{label} profile", bottom=0))
 
 
-CR7_ASCII_LINES = [
-    r"        _..._        ",
-    r"      .:::::::.      ",
-    r"     :::::::::::     ",
-    r"     ':::::::::'     ",
-    r"        ':::'        ",
-    r"_         |         _",
-    r" \       / \       / ",
-    r"  \_____/ 7 \_____/  ",
-    r"   \     ###     /   ",
-    r"    \   #####   /    ",
-    r"     \ ####### /     ",
-    r"      \ ##### /      ",
-    r"       \ ### /       ",
-    r"        \ # /        ",
-    r"        _\_/_        ",
-    r"       /     \       ",
-    r"      /  / \  \      ",
-    r"     /  /   \  \     ",
-    r"    /  /     \  \    ",
-    r"   /__/       \__\   ",
-    r"    S I U U U U !    ",
-]
-
-
 def cr7_quote_card():
     w = 880
-    h = 230
-    ascii_lines_svg = []
-    y_start = 28
-    line_h = 9.2
-    for i, line in enumerate(CR7_ASCII_LINES[:-1]):
-        y = y_start + i * line_h
-        escaped_line = escape(line)
-        ascii_lines_svg.append(
-            f'<text x="700" y="{y:.1f}" text-anchor="middle" font-family="{MONO}" '
-            f'font-size="9" fill="{ORANGE_ACCENT}" opacity="0.9" xml:space="preserve">{escaped_line}</text>'
+    h = 430
+    lines = []
+    if os.path.exists(DATA_SIUU):
+        with open(DATA_SIUU, "r", encoding="utf-8") as f:
+            lines = [l for l in f.read().splitlines() if l.strip()]
+
+    font_size = 2.7
+    line_h = 2.92
+    start_y = 26
+    start_x = 525
+
+    ascii_svg_lines = []
+    for i, line in enumerate(lines):
+        y = start_y + i * line_h
+        ascii_svg_lines.append(
+            f'<text x="{start_x}" y="{y:.2f}" font-family="{MONO}" '
+            f'font-size="{font_size}" fill="{ORANGE_ACCENT}" opacity="0.92" xml:space="preserve">{escape(line)}</text>'
         )
-
-    last_y = y_start + (len(CR7_ASCII_LINES) - 1) * line_h + 3
-    ascii_lines_svg.append(
-        f'<text x="700" y="{last_y:.1f}" text-anchor="middle" font-family="{MONO}" '
-        f'font-size="10.5" font-weight="700" letter-spacing="2" fill="{ORANGE_DEEP}" xml:space="preserve">S I U U U U !</text>'
-    )
-    ascii_block = "\n".join(ascii_lines_svg)
-
-    pill_text = "CR7 &#x00B7; THE GOAT &#x1F410;"
-    pill_w = 158
+    ascii_block = "\n".join(ascii_svg_lines)
 
     body = f"""
+<defs>
+  <radialGradient id="cr7-glow" cx="75%" cy="50%" r="45%">
+    <stop offset="0%" stop-color="{ORANGE_ACCENT}" stop-opacity="0.09"/>
+    <stop offset="60%" stop-color="{ORANGE_ACCENT}" stop-opacity="0.02"/>
+    <stop offset="100%" stop-color="{ORANGE_ACCENT}" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="text-shadow" x="-10%" y="-10%" width="120%" height="120%">
+    <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000000" flood-opacity="0.7"/>
+  </filter>
+</defs>
+
 <rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{CARD_BG}" stroke="{CARD_BORDER}" stroke-width="1"/>
-<g class="r" {d(0.2)}>
-  <rect x="36" y="26" width="{pill_w}" height="24" rx="12" fill="#2a1705" stroke="{ORANGE_ACCENT}" stroke-width="1" stroke-opacity="0.7"/>
-  <circle cx="48" cy="38" r="2.5" fill="{ORANGE_ACCENT}"/>
-  <text x="58" y="42" font-family="{MONO}" font-size="10.5" font-weight="600" letter-spacing="0.5" fill="{ORANGE_ACCENT}">{pill_text}</text>
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="url(#cr7-glow)"/>
 
-  <text x="36" y="96" font-family="{SERIF}" font-size="32" fill="{TEXT_MAIN}">Build &#x2192; Fail &#x2192; Learn</text>
-  <text x="36" y="136" font-family="{SERIF}" font-size="32" fill="{TEXT_MAIN}">Improve &#x2192; <tspan font-style="italic" fill="{ORANGE_ACCENT}">Repeat.</tspan></text>
-
-  <rect x="36" y="160" width="450" height="1" fill="{RULE}" opacity="0.4"/>
-
-  <text x="36" y="186" font-family="{SANS}" font-weight="500" font-size="14" fill="{TEXT_MAIN}">Thanks for stopping by.</text>
-  <text x="36" y="206" font-family="{SANS}" font-size="13" fill="{MUTED}">Keep building something real.</text>
+<!-- SIUU ASCII ART (Right side in glowing orange) -->
+<g class="r" {d(0.35)}>
+{ascii_block}
 </g>
 
-<line x1="520" y1="24" x2="520" y2="206" stroke="{CARD_BORDER}" stroke-dasharray="3 3" opacity="0.5"/>
+<!-- Left content with text shadow -->
+<g class="r" {d(0.15)} filter="url(#text-shadow)">
+  <!-- Plain CR7 IS THE GOAT (No pill/capsule, clean plain text) -->
+  <g transform="translate(40 48)">
+    <circle cx="4" cy="-3.5" r="3.5" fill="{ORANGE_ACCENT}"/>
+    <text x="16" y="0" font-family="{MONO}" font-size="12" font-weight="600" letter-spacing="1.5" fill="{ORANGE_ACCENT}">CR7 IS THE GOAT &#x1F410;</text>
+  </g>
 
-<g class="r" {d(0.4)}>
-{ascii_block}
+  <!-- Single line quote spanning across the top and slightly over the pose -->
+  <text x="40" y="96" font-family="{SERIF}" font-size="28" fill="{TEXT_MAIN}">Build &#x2192; Fail &#x2192; Learn &#x2192; Improve &#x2192; <tspan font-style="italic" fill="{ORANGE_ACCENT}">Repeat.</tspan></text>
+
+  <!-- Divider -->
+  <rect x="40" y="118" width="460" height="1" fill="{RULE}" opacity="0.35"/>
+
+  <!-- Left body details / message -->
+  <text x="40" y="160" font-family="{SANS}" font-weight="600" font-size="20" fill="{TEXT_MAIN}">Thanks for stopping by.</text>
+  <text x="40" y="190" font-family="{SANS}" font-size="14" fill="{MUTED}">Always open to building something meaningful together.</text>
+  <text x="40" y="212" font-family="{SANS}" font-size="14" fill="{MUTED}">Building in public, learning every single day.</text>
+
+  <!-- Callout / Signature quote -->
+  <rect x="40" y="246" width="440" height="74" rx="8" fill="#21262d" stroke="{CARD_BORDER}" stroke-width="1" opacity="0.8"/>
+  <text x="56" y="274" font-family="{MONO}" font-size="10" font-weight="600" letter-spacing="1" fill="{ORANGE_ACCENT}">CRISTIANO RONALDO</text>
+  <text x="56" y="298" font-family="{SANS}" font-size="13.5" font-weight="500" fill="{TEXT_MAIN}">&#x201C;Talent without working hard is nothing.&#x201D;</text>
+
+  <g transform="translate(40 365)">
+    <text x="0" y="0" font-family="{MONO}" font-size="11" letter-spacing="1.5" fill="{MUTED}">AYUSH SHARMA &#x00B7; <tspan fill="{ORANGE_ACCENT}">SIUUU</tspan> &#x2197;</text>
+  </g>
 </g>
 """
     write("quote.svg", svg(w, h, body, ["serif", "serif-i", "sans", "sans-b", "mono"],
-                           "Build, Fail, Learn, Repeat - Cristiano Ronaldo SIUU", bottom=12))
+                           "Build Fail Learn Improve Repeat - CR7 SIUU", bottom=12))
 
 
 if __name__ == "__main__":

@@ -264,7 +264,7 @@ def stack():
 
         rows.append(
             f'<g class="r" {d(delay)}>'
-            f'<text x="44" y="{row_y + 18}" font-family="{MONO}" font-size="11" letter-spacing="1.5" font-weight="600" fill="{MUTED}">{cat}</text>'
+            f'<text x="44" y="{row_y + 18}" font-family="{MONO}" font-size="11" letter-spacing="1.5" font-weight="600" fill="{MUTED}">{escape(cat)}</text>'
             f'</g>'
             f'{"".join(pills)}'
             f'{row_divider}'

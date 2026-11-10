@@ -83,15 +83,33 @@ def font_face(keys):
     return "\n".join(out)
 
 
-def svg(w, h, body, fonts, label, bottom=BOTTOM):
+def svg(w, h, body, fonts, label, left=0, right=0, bottom=BOTTOM):
+    if left:
+        body = f'<g transform="translate({left:.3f} 0)">{body}</g>'
+    total_w = w + left + right
+    total_h = h + bottom
     css = font_face(fonts) + BASE_CSS
     if os.environ.get("STATIC"):
         css += ".r,.f,.g,.p,.live{animation:none!important;opacity:1!important;transform:none!important}"
     return (
-        f'<svg xmlns="http://www.w3.org/2000/svg" width="{w:.3f}" height="{h + bottom}" viewBox="0 0 {w:.3f} {h + bottom}" '
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{total_w:.3f}" height="{total_h}" viewBox="0 0 {total_w:.3f} {total_h}" '
         f'role="img" aria-label="{escape(label)}"><title>{escape(label)}</title>'
         f"<style>{css}</style>{body}</svg>"
     )
+
+
+def wrap(text, n):
+    words = text.split()
+    lines, cur = [], []
+    for w in words:
+        if sum(len(x) for x in cur) + len(cur) + len(w) > n:
+            lines.append(" ".join(cur))
+            cur = [w]
+        else:
+            cur.append(w)
+    if cur:
+        lines.append(" ".join(cur))
+    return lines
 
 
 def write(name, content):
@@ -281,6 +299,77 @@ def stack():
                            "What I work with: Languages, Frontend, Backend, AI, Tools"))
 
 
+PROJECTS = [
+    (
+        "boringtools",
+        "BoringTools",
+        "LIVE",
+        "#3fb950",
+        "#132c1c",
+        "100 Days, 100 Tools. Browser-first micro-utilities, no signup, no fluff.",
+        "Next.js · Tailwind · Vercel",
+    ),
+    (
+        "vakiogiri",
+        "Vakiogiri",
+        "TESTING",
+        "#ff7828",
+        "#2a1705",
+        "Turns YouTube videos into viral, ready-to-post Shorts automatically.",
+        "Python · FastAPI · Next.js",
+    ),
+    (
+        "arrowgo",
+        "ArrowGoPlus",
+        "UP NEXT",
+        "#8b949e",
+        "#21262d",
+        "Feature-rich Arrow puzzle game with cloud saves, leaderboards & editor.",
+        "ASP.NET Core · .NET 8",
+    ),
+]
+
+
+def project_card(i, key, title, status, st_color, st_bg, desc, stack_info):
+    proj_w = 880 / 3 - 8
+    proj_h = 186
+    delay = 0.4 + i * 0.15
+
+    pill_w = round(len(status) * 7.2 + 22)
+    pill_x = proj_w - 20 - pill_w
+    pill_y = 18
+
+    desc_lines = wrap(desc, 30)
+    desc_svg = "".join(
+        f'<text x="20" y="{70 + j * 20}" font-family="{SANS}" font-size="13" fill="{MUTED}">{escape(l)}</text>'
+        for j, l in enumerate(desc_lines)
+    )
+
+    body = f"""
+<rect x="0.5" y="0.5" width="{proj_w - 1:.3f}" height="{proj_h - 1}" rx="14" fill="{CARD_BG}" stroke="{CARD_BORDER}" stroke-width="1"/>
+<g class="r" {d(delay)}>
+  <text x="20" y="36" font-family="{SANS}" font-weight="600" font-size="17" fill="{TEXT_MAIN}">{escape(title)}</text>
+  <rect x="{pill_x:.3f}" y="{pill_y}" width="{pill_w}" height="22" rx="11" fill="{st_bg}" stroke="{st_color}" stroke-width="1" stroke-opacity="0.6"/>
+  <circle cx="{pill_x + 9:.3f}" cy="{pill_y + 11}" r="2.5" fill="{st_color}"/>
+  <text x="{pill_x + 16:.3f}" y="{pill_y + 15}" font-family="{MONO}" font-size="10" font-weight="600" letter-spacing="0.5" fill="{st_color}">{escape(status)}</text>
+  {desc_svg}
+  <rect x="20" y="138" width="{proj_w - 40:.3f}" height="1" fill="{RULE}" opacity="0.4"/>
+  <text x="20" y="160" font-family="{MONO}" font-size="11" fill="{MUTED}">{escape(stack_info)}</text>
+</g>
+"""
+    write(f"project-{key}.svg", svg(proj_w, proj_h, body, ["sans", "sans-b", "mono"], f"{title}: {desc}",
+                                    left=4 * i, right=8 - 4 * i))
+
+
+def project_title():
+    h = 48
+    body = (
+        f'<text class="r" {d(0.2)} x="2" y="36" font-family="{SERIF}" font-size="34" fill="{TEXT_MAIN}">Featured '
+        f'<tspan font-style="italic" fill="{ORANGE_ACCENT}">projects</tspan></text>'
+    )
+    write("title-projects.svg", svg(W, h, body, ["serif", "serif-i"], "Featured projects", bottom=0))
+
+
 if __name__ == "__main__":
     if not os.path.exists(DATA):
         print(f"Error: {DATA} not found. Run scripts/fetch_contributions.py first.")
@@ -290,4 +379,7 @@ if __name__ == "__main__":
     heatmap(data)
     activity(data)
     stack()
-    print("Done! Rendered heatmap.svg, activity.svg, and stack.svg into cards/")
+    project_title()
+    for i, (key, title, status, st_color, st_bg, desc, stack_info) in enumerate(PROJECTS):
+        project_card(i, key, title, status, st_color, st_bg, desc, stack_info)
+    print("Done! Rendered all profile cards into cards/")

@@ -36,13 +36,10 @@ I also run an **eSports organization on the side.**
 
 ---
 
-# Projects
-
-| Project                                                                                             | Status         | Stack                       | Links                                                                                              |
-| --------------------------------------------------------------------------------------------------- | -------------- | --------------------------- | -------------------------------------------------------------------------------------------------- |
-| 🔧 **BoringTools** — 100 Days, 100 Tools. Browser-first micro-utilities, no signup, no fluff.       | ✅ Done         | Next.js · Tailwind · Vercel | [Live](https://www.boringtoolsai.com/) · [Repo](https://github.com/ius-sharma/boring-tools) |
-|  **YT Shorts Clipper** — Turns a YouTube video into ready-to-post Shorts automatically.           | 🔨 In Progress | Python · FastAPI · Next.js  | Coming soon                                                                                        |
-|  **ArrowGoPlus** — Feature-rich Arrow Puzzle clone with cloud saves, leaderboards & level editor. | 🔜 Up Next     | ASP.NET Core MVC · .NET 8   | Coming soon                                                                                        |
+<div align="center">
+  <img src="./cards/title-projects.svg" width="100%" alt="Featured Projects" /><br>
+  <a href="https://www.boringtoolsai.com/"><img src="./cards/project-boringtools.svg" width="33.333%" alt="BoringTools" /></a><a href="https://github.com/ius-sharma"><img src="./cards/project-vakiogiri.svg" width="33.333%" alt="Vakiogiri" /></a><a href="https://github.com/ius-sharma/ArrowGoPlus"><img src="./cards/project-arrowgo.svg" width="33.333%" alt="ArrowGoPlus" /></a>
+</div>
 
 ---
 

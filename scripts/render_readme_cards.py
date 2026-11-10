@@ -539,12 +539,42 @@ def cr7_quote_card():
                            "Build Fail Learn Improve Repeat - CR7 SIUU", bottom=12))
 
 
+def header_card():
+    w = 880
+    h = 135
+    body = f"""
+<!-- Top row: tags & live status -->
+<g class="r" {d(0.10)}>
+  <circle cx="6" cy="18" r="3" fill="{ORANGE_ACCENT}"/>
+  <text x="18" y="22" font-family="{MONO}" font-size="11" font-weight="600" letter-spacing="1.5" fill="{MUTED}">STUDENT &#x00B7; BUILDER &#x00B7; FOUNDER</text>
+  
+  <g transform="translate({w} 0)">
+    <circle cx="-168" cy="18" r="3.5" fill="#3fb950" class="live"/>
+    <text x="-156" y="22" font-family="{MONO}" font-size="11" font-weight="600" letter-spacing="1" fill="{MUTED}">OPEN TO REAL PROJECTS</text>
+  </g>
+</g>
+
+<!-- Center main headline -->
+<g class="r" {d(0.22)}>
+  <text x="2" y="74" font-family="{SERIF}" font-size="44" fill="{TEXT_MAIN}">Ayush Sharma <tspan font-family="{SANS}" font-size="28" fill="#484f58">&#x2014;</tspan> <tspan font-style="italic" fill="{ORANGE_ACCENT}">crafting real-world tools.</tspan></text>
+</g>
+
+<!-- Bottom 1-line bio -->
+<g class="r" {d(0.34)}>
+  <text x="2" y="114" font-family="{SANS}" font-size="14.5" fill="{MUTED}">B.Tech CE @ Marwadi Univ <tspan fill="#484f58">&#x00B7;</tspan> Building software from 0 to 1, running an eSports ecosystem &amp; learning in public.</text>
+</g>
+"""
+    write("header.svg", svg(w, h, body, ["serif", "serif-i", "sans", "sans-b", "mono"],
+                            "Ayush Sharma - crafting real-world tools", bottom=0))
+
+
 if __name__ == "__main__":
     if not os.path.exists(DATA):
         print(f"Error: {DATA} not found. Run scripts/fetch_contributions.py first.")
         exit(1)
     with open(DATA, "r", encoding="utf-8") as f:
         data = json.load(f)
+    header_card()
     heatmap(data)
     activity(data)
     stack()

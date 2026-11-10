@@ -1,15 +1,6 @@
-# Hey everyone, here's your loved Ayush Sharma.
-
-### **Building things, failing, learning from those failures, and improving every day.**
-
-I'm a **B.Tech Computer Engineering student @ Marwadi University, Semester 5.**
-
-I work on projects that solve real-world problems, add value to people's lives, and help me learn by actually building things.
-
-I also run an **eSports organization on the side.**
-
->  Not open for free-work opportunities.
->  If you're building something real, **let's talk. I'm always open to building something meaningful together.**
+<div align="center">
+  <img src="./cards/header.svg" width="100%" alt="Ayush Sharma - crafting real-world tools" />
+</div>
 
 ---
 

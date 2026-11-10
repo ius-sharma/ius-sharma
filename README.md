@@ -28,14 +28,6 @@ I also run an **eSports organization on the side.**
 
 ---
 
-## 🐟 My GitHub Koi
-
-<p align="center">
-  <img src="./koi/koi.gif" width="300" alt="My GitHub Koi" />
-</p>
-
----
-
 <div align="center">
   <img src="./cards/title-projects.svg" width="100%" alt="Featured Projects" /><br>
   <a href="https://www.boringtoolsai.com/"><img src="./cards/project-boringtools.svg" width="33.333%" alt="BoringTools" /></a><a href="https://github.com/ius-sharma"><img src="./cards/project-vakiogiri.svg" width="33.333%" alt="Vakiogiri" /></a><a href="https://github.com/ius-sharma/ArrowGoPlus"><img src="./cards/project-arrowgo.svg" width="33.333%" alt="ArrowGoPlus" /></a>

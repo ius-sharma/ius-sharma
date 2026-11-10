@@ -1,0 +1,43 @@
+name: Update Profile Cards
+
+# Refreshes the contribution heatmap + activity card daily with real GitHub activity
+on:
+  schedule:
+    - cron: "17 6 * * *"   # ~06:17 UTC daily
+  workflow_dispatch: {}
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-cards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch real contribution data
+        run: python scripts/fetch_contributions.py
+        env:
+          GH_PROFILE_USER: ius-sharma
+
+      - name: Render orange heatmap & activity cards
+        run: python scripts/render_readme_cards.py
+
+      - name: Commit updated cards
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: refresh contribution graph & activity cards [skip ci]"
+          file_pattern: "data/contributions.json cards/*.svg"

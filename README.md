@@ -53,12 +53,15 @@ I also run an **eSports organization on the side.**
 
 ---
 
-# GitHub Stats
+# GitHub Activity
+
+<div align="center">
+  <img src="./cards/heatmap.svg" width="100%" alt="Ayush's contribution graph, in orange, refreshed daily" /><br>
+  <img src="./cards/activity.svg" width="100%" alt="Contributions in the last 12 months, streak, and busiest day" />
+</div>
 
 <p align="center">
-  <img src="./profile/stats.svg" height="180" alt="Ayush's GitHub Stats" />
-  <img src="./profile/top-langs.svg" height="180" alt="Most Used Languages" />
-  <img src="./profile/streak.svg" height="180" alt="GitHub Streak" />
+  <img src="./profile/top-langs.svg" height="165" alt="Most Used Languages" />
 </p>
 ---
 

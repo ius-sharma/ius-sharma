@@ -20,18 +20,18 @@ DATA = os.path.join(ROOT, "data", "contributions.json")
 OUT = os.path.join(ROOT, "cards")
 FONTS = os.path.join(ROOT, "fonts")
 
-# ---- Brand Tokens (Paper & Orange Theme) -----------------------------------
-PAPER = "#f3f3f1"
-PAPER_DEEP = "#e2e2de"
-INK = "#111111"
-INK_SOFT = "#3a3a3c"
-MUTED = "#6e6e73"
-RULE = "#dcdcd7"
-ORANGE_ACCENT = "#ff6a00"
-ORANGE_DEEP = "#c2410c"
+# ---- Brand Tokens (Dark Mode & Orange Theme) -------------------------------
+CARD_BG = "#161b22"
+CARD_BORDER = "#30363d"
+TEXT_MAIN = "#f0f6fc"
+TEXT_SOFT = "#c9d1d9"
+MUTED = "#8b949e"
+RULE = "#30363d"
+ORANGE_ACCENT = "#ff7828"
+ORANGE_DEEP = "#ff893b"
 
-# Orange heatmap gradient (0 = empty, 1 = lowest, 5 = highest)
-ORANGE = [PAPER_DEEP, "#fed7aa", "#fdba74", "#fb923c", "#f97316", "#c2410c"]
+# Dark mode orange heatmap gradient (0 = empty, 1 = lowest, 5 = highest)
+ORANGE = ["#21262d", "#5e2208", "#93370d", "#ca4e11", "#f97316", "#ff893b"]
 
 W = 880  # Full card width (GitHub's standard README column at 100%)
 BOTTOM = 12
@@ -147,8 +147,8 @@ def heatmap(data):
     h = gy + 7 * step + 44
 
     body = f"""
-<rect width="{W}" height="{h}" rx="14" fill="{PAPER}"/>
-<text class="r" {d(0.8)} x="42" y="62" font-family="{SERIF}" font-size="34" fill="{INK}">Every day, <tspan font-style="italic" fill="{ORANGE_ACCENT}">in orange</tspan></text>
+<rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="14" fill="{CARD_BG}" stroke="{CARD_BORDER}" stroke-width="1"/>
+<text class="r" {d(0.8)} x="42" y="62" font-family="{SERIF}" font-size="34" fill="{TEXT_MAIN}">Every day, <tspan font-style="italic" fill="{ORANGE_ACCENT}">in orange</tspan></text>
 <text class="f" {d(0.8)} x="{right}" y="60" text-anchor="end" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">REFRESHED DAILY</text>
 {''.join(cells)}
 <g class="f" {d(2.4)}>{labels}
@@ -174,7 +174,7 @@ def activity(data):
         is_best = m is best
         bh = max(4, round(m["total"] / top * maxh))
         x = x0 + i * (bw + gap)
-        fill = ORANGE_ACCENT if is_best else ("#c9c9c4" if partial else INK)
+        fill = ORANGE_ACCENT if is_best else ("#282e37" if partial else "#484f58")
         label = datetime.date.fromisoformat(m["month"] + "-01").strftime("%b")
         bars.append(
             f'<rect class="g" style="animation-delay:{2.2 + i * 0.07:.2f}s" x="{x:.1f}" y="{base - bh}" '
@@ -194,7 +194,7 @@ def activity(data):
     total_days = len(data["days"])
     stats = [
         (f'{cs} <tspan font-style="italic" fill="{ORANGE_ACCENT}">days</tspan>', streak_note),
-        (f'{data["active_days"]}<tspan fill="#8e8e93"> / {total_days}</tspan>', "days with a commit"),
+        (f'{data["active_days"]}<tspan fill="#8b949e"> / {total_days}</tspan>', "days with a commit"),
         (f'{data["best_day"]["count"]}', "on the busiest day"),
     ]
     side = []
@@ -202,16 +202,16 @@ def activity(data):
         y = 104 + i * 92
         side.append(
             f'<g class="r" {d(2.6 + i * 0.15)}>'
-            f'<text x="650" y="{y}" font-family="{SERIF}" font-size="40" fill="{INK}">{big}</text>'
+            f'<text x="650" y="{y}" font-family="{SERIF}" font-size="40" fill="{TEXT_MAIN}">{big}</text>'
             f'<text x="650" y="{y + 24}" font-family="{SANS}" font-size="13" fill="{MUTED}">{small}</text></g>'
         )
         if i < 2:
             side.append(f'<rect class="f" {d(2.6)} x="650" y="{y + 44}" width="190" height="1" fill="{RULE}"/>')
 
     body = f"""
-<rect width="{W}" height="{h}" rx="14" fill="{PAPER}"/>
+<rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="14" fill="{CARD_BG}" stroke="{CARD_BORDER}" stroke-width="1"/>
 <text class="f" {d(1.9)} x="40" y="58" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">THE LAST 12 MONTHS ON GITHUB</text>
-<text class="r" {d(2.0)} x="38" y="114" font-family="{SERIF}" font-size="52" fill="{INK}">{data["total_contributions"]:,} <tspan font-style="italic" fill="{ORANGE_ACCENT}">contributions</tspan></text>
+<text class="r" {d(2.0)} x="38" y="114" font-family="{SERIF}" font-size="52" fill="{TEXT_MAIN}">{data["total_contributions"]:,} <tspan font-style="italic" fill="{ORANGE_ACCENT}">contributions</tspan></text>
 {''.join(bars)}
 {''.join(side)}
 """

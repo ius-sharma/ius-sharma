@@ -370,6 +370,58 @@ def project_title():
     write("title-projects.svg", svg(W, h, body, ["serif", "serif-i"], "Featured projects", bottom=0))
 
 
+def beyond_code():
+    w = 478
+    h = 210
+    pill_text = "ESPORTS FOUNDER"
+    pill_w = round(len(pill_text) * 7.2 + 22)
+    pill_x = w - 24 - pill_w
+    body = f"""
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{CARD_BG}" stroke="{CARD_BORDER}" stroke-width="1"/>
+<g class="r" {d(0.2)}>
+  <text x="24" y="38" font-family="{SERIF}" font-size="28" fill="{TEXT_MAIN}">Beyond <tspan font-style="italic" fill="{ORANGE_ACCENT}">code</tspan></text>
+  <rect x="{pill_x}" y="18" width="{pill_w}" height="22" rx="11" fill="#2a1705" stroke="{ORANGE_ACCENT}" stroke-width="1" stroke-opacity="0.7"/>
+  <circle cx="{pill_x + 9}" cy="29" r="2.5" fill="{ORANGE_ACCENT}"/>
+  <text x="{pill_x + 16}" y="33" font-family="{MONO}" font-size="10" font-weight="600" letter-spacing="0.5" fill="{ORANGE_ACCENT}">{pill_text}</text>
+  <rect x="24" y="56" width="430" height="1" fill="{RULE}" opacity="0.4"/>
+  <text x="24" y="86" font-family="{SANS}" font-weight="600" font-size="17" fill="{TEXT_MAIN}">Founder of ODDSOCEAN</text>
+  <text x="24" y="112" font-family="{SANS}" font-size="13" fill="{MUTED}">An eSports organization built for the underdogs.</text>
+  <text x="24" y="132" font-family="{SANS}" font-size="13" fill="{MUTED}">Creating a gaming ecosystem where players and creators</text>
+  <text x="24" y="152" font-family="{SANS}" font-size="13" fill="{MUTED}">grow, compete, and build something bigger together.</text>
+  <rect x="24" y="172" width="430" height="1" fill="{RULE}" opacity="0.3"/>
+  <text x="24" y="193" font-family="{MONO}" font-size="11" letter-spacing="1" fill="{ORANGE_ACCENT}">oddsocean.in &#x2197;</text>
+</g>
+"""
+    write("beyond-code.svg", svg(w, h, body, ["serif", "serif-i", "sans", "mono"],
+                                 "Beyond Code - Founder of ODDSOCEAN", right=6))
+
+
+def connect():
+    w = 390
+    h = 210
+    pill_text = "OPEN FOR TALKS"
+    pill_w = round(len(pill_text) * 7.2 + 22)
+    pill_x = w - 24 - pill_w
+    body = f"""
+<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="14" fill="{CARD_BG}" stroke="{CARD_BORDER}" stroke-width="1"/>
+<g class="r" {d(0.3)}>
+  <text x="24" y="38" font-family="{SERIF}" font-size="28" fill="{TEXT_MAIN}">Let&apos;s <tspan font-style="italic" fill="{ORANGE_ACCENT}">connect</tspan></text>
+  <rect x="{pill_x}" y="18" width="{pill_w}" height="22" rx="11" fill="#132c1c" stroke="#3fb950" stroke-width="1" stroke-opacity="0.7"/>
+  <circle cx="{pill_x + 9}" cy="29" r="2.5" fill="#3fb950"/>
+  <text x="{pill_x + 16}" y="33" font-family="{MONO}" font-size="10" font-weight="600" letter-spacing="0.5" fill="#3fb950">{pill_text}</text>
+  <rect x="24" y="56" width="342" height="1" fill="{RULE}" opacity="0.4"/>
+  <text x="24" y="86" font-family="{SANS}" font-weight="600" font-size="17" fill="{TEXT_MAIN}">Building something real?</text>
+  <text x="24" y="112" font-family="{SANS}" font-size="13" fill="{MUTED}">Not open for free-work, but always eager</text>
+  <text x="24" y="132" font-family="{SANS}" font-size="13" fill="{MUTED}">to build meaningful products with good teams.</text>
+  <text x="24" y="152" font-family="{SANS}" font-size="13" fill="{MUTED}">Let&apos;s talk and create value.</text>
+  <rect x="24" y="172" width="342" height="1" fill="{RULE}" opacity="0.3"/>
+  <text x="24" y="193" font-family="{MONO}" font-size="11" letter-spacing="1" fill="{ORANGE_ACCENT}">DROP A MESSAGE OR EMAIL &#x2197;</text>
+</g>
+"""
+    write("connect.svg", svg(w, h, body, ["serif", "serif-i", "sans", "mono"],
+                             "Let's Connect - Always open to building meaningful things", left=6))
+
+
 if __name__ == "__main__":
     if not os.path.exists(DATA):
         print(f"Error: {DATA} not found. Run scripts/fetch_contributions.py first.")
@@ -382,4 +434,6 @@ if __name__ == "__main__":
     project_title()
     for i, (key, title, status, st_color, st_bg, desc, stack_info) in enumerate(PROJECTS):
         project_card(i, key, title, status, st_color, st_bg, desc, stack_info)
+    beyond_code()
+    connect()
     print("Done! Rendered all profile cards into cards/")

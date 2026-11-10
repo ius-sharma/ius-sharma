@@ -35,46 +35,21 @@ I also run an **eSports organization on the side.**
 
 ---
 
-# Beyond Code
-
-## Founder of [**ODDSOCEAN**](https://oddsocean.in/)
-
-An eSports organization built for the **underdogs**.
-
-We're building toward a gaming ecosystem where talented players and creators get opportunities to **grow, compete, and build something bigger.**
-
----
-
-# Let's Connect
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/ayush-sharma-833163320/">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="mailto:sharmaeditzayush@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/>
-  </a>
-  <a href="https://www.youtube.com/@ocnayush">
-    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
-  </a>
-  <a href="https://oddsocean.in/">
-    <img src="https://img.shields.io/badge/ODDSOCEAN-6366F1?style=for-the-badge&logo=vercel&logoColor=white"/>
-  </a>
-</p>
-
-
-## 🌐 Connect With Me
-
-<p align="left">
-  <a href="https://github.com/ius-sharma">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-  </a>
-</p>
-
----
-
-### 💭 *Build → Fail → Learn → Improve → Repeat.*
+<div align="center">
+  <a href="https://oddsocean.in/"><img src="./cards/beyond-code.svg" width="55%" alt="Beyond Code - Founder of ODDSOCEAN" /></a><a href="https://www.linkedin.com/in/ayush-sharma-833163320/"><img src="./cards/connect.svg" width="45%" alt="Let's Connect" /></a>
+</div>
 
 <p align="center">
-  <i>Thanks for stopping by. [ BTW, Cristiano is the GOAT]</i>
+  <a href="https://www.linkedin.com/in/ayush-sharma-833163320/">linkedin</a> &nbsp;/&nbsp;
+  <a href="mailto:sharmaeditzayush@gmail.com">email</a> &nbsp;/&nbsp;
+  <a href="https://oddsocean.in/">oddsocean</a> &nbsp;/&nbsp;
+  <a href="https://www.youtube.com/@ocnayush">youtube</a> &nbsp;/&nbsp;
+  <a href="https://github.com/ius-sharma">github</a>
+</p>
+
+---
+
+<p align="center">
+  <i>Build → Fail → Learn → Improve → Repeat.</i><br>
+  <b>Thanks for stopping by. [ BTW, Cristiano is the GOAT 🐐 ]</b>
 </p>

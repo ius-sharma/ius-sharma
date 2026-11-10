@@ -219,6 +219,68 @@ def activity(data):
                               f'{data["total_contributions"]:,} contributions in the last year, {cs}-day streak'))
 
 
+def stack():
+    h = 370
+    categories = [
+        ("LANGUAGES", ["JavaScript", "TypeScript", "Python", "HTML5", "CSS3"]),
+        ("FRONTEND", ["Next.js", "React", "Tailwind CSS", "Vite"]),
+        ("BACKEND & DB", ["Node.js", "Express.js", "MongoDB"]),
+        ("AI / LLMS", ["Groq", "LLaMA", "Prompt Engineering"]),
+        ("TOOLS & CLOUD", ["Git", "GitHub", "Postman", "Vercel", "Render"]),
+    ]
+
+    rows = []
+    for i, (cat, items) in enumerate(categories):
+        row_y = 108 + i * 48
+        is_ai = cat == "AI / LLMS"
+        delay = 0.5 + i * 0.12
+        pills = []
+        px = 200
+        for item in items:
+            text_len = len(item)
+            pw = max(54, round(text_len * 7.5 + (32 if is_ai else 24)))
+            if is_ai:
+                pills.append(
+                    f'<g class="r" {d(delay)}>'
+                    f'<rect x="{px}" y="{row_y}" width="{pw}" height="28" rx="6" fill="#21262d" stroke="{ORANGE_ACCENT}" stroke-width="1" stroke-opacity="0.7"/>'
+                    f'<circle cx="{px + 12}" cy="{row_y + 14}" r="2.5" fill="{ORANGE_ACCENT}"/>'
+                    f'<text x="{px + 12 + round((pw - 12) / 2)}" y="{row_y + 18}" text-anchor="middle" font-family="{SANS}" font-size="12" font-weight="500" fill="{TEXT_MAIN}">{escape(item)}</text>'
+                    f'</g>'
+                )
+            else:
+                pills.append(
+                    f'<g class="r" {d(delay)}>'
+                    f'<rect x="{px}" y="{row_y}" width="{pw}" height="28" rx="6" fill="#21262d" stroke="{CARD_BORDER}" stroke-width="1"/>'
+                    f'<text x="{px + round(pw / 2)}" y="{row_y + 18}" text-anchor="middle" font-family="{SANS}" font-size="12" font-weight="500" fill="{TEXT_MAIN}">{escape(item)}</text>'
+                    f'</g>'
+                )
+            px += pw + 8
+
+        row_divider = (
+            f'<rect class="f" {d(delay)} x="42" y="{row_y + 38}" width="796" height="1" fill="{RULE}" opacity="0.3"/>'
+            if i < len(categories) - 1
+            else ""
+        )
+
+        rows.append(
+            f'<g class="r" {d(delay)}>'
+            f'<text x="44" y="{row_y + 18}" font-family="{MONO}" font-size="11" letter-spacing="1.5" font-weight="600" fill="{MUTED}">{cat}</text>'
+            f'</g>'
+            f'{"".join(pills)}'
+            f'{row_divider}'
+        )
+
+    body = f"""
+<rect x="0.5" y="0.5" width="{W - 1}" height="{h - 1}" rx="14" fill="{CARD_BG}" stroke="{CARD_BORDER}" stroke-width="1"/>
+<text class="r" {d(0.3)} x="42" y="58" font-family="{SERIF}" font-size="34" fill="{TEXT_MAIN}">What I <tspan font-style="italic" fill="{ORANGE_ACCENT}">work with</tspan></text>
+<text class="f" {d(0.3)} x="836" y="56" text-anchor="end" font-family="{MONO}" font-size="12" letter-spacing="1" fill="{MUTED}">CORE TECH &amp; TOOLING</text>
+<rect class="f" {d(0.4)} x="42" y="78" width="796" height="1" fill="{RULE}"/>
+{''.join(rows)}
+"""
+    write("stack.svg", svg(W, h, body, ["serif", "serif-i", "sans", "mono"],
+                           "What I work with: Languages, Frontend, Backend, AI, Tools"))
+
+
 if __name__ == "__main__":
     if not os.path.exists(DATA):
         print(f"Error: {DATA} not found. Run scripts/fetch_contributions.py first.")
@@ -227,4 +289,5 @@ if __name__ == "__main__":
         data = json.load(f)
     heatmap(data)
     activity(data)
-    print("Done! Rendered heatmap.svg and activity.svg into cards/")
+    stack()
+    print("Done! Rendered heatmap.svg, activity.svg, and stack.svg into cards/")
